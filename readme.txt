@@ -1,0 +1,1 @@
+This is a collection of useful AutoHotKey scripts I came up with to help solve various small itches
