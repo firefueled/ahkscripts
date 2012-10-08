@@ -52,9 +52,9 @@ Loop % t.MaxIndex()
 	
 	spaces := maxlen - keylen + 1
 
-	SendInput % key
+	SendInput {Raw}%key%
 	SendInput {space %spaces%}%delimiter%{space}
-	SendInput % val
+	SendInput {Raw}%val%
 
 	if (i < t.MaxIndex())
 	{
