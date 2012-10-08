@@ -1,4 +1,4 @@
-^!s::png 
+^!s::
 KeyWait s
 KeyWait Alt
 KeyWait Control
