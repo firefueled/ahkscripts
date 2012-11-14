@@ -1,11 +1,32 @@
-^!s::
+^!q::Reload
+
+^!a::
 KeyWait s
 KeyWait Alt
 KeyWait Control
 
-;define your escaped delimiter and separator here
-delimiter = `:
-separator = `,
+gui, font, s10 Verdana
+gui, add, text,, Set Delimiter and Separator
+
+gui, font, s30 Verdana
+gui, add, edit, center section xs+40 vdelimiter, `:
+gui, add, edit, center ys vseparator, `,
+
+gui, font, s10 Verdana
+gui, add, Button, section Default, OK
+
+gui, show
+return
+
+ButtonOK:
+Gui, Submit
+
+;in case the vars are empty
+if delimiter is space
+	delimiter = `:
+
+if separator is space
+	separator = `,
 
 ;grabs selected text
 Send ^c
