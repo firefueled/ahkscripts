@@ -1,6 +1,4 @@
-^!q::Reload
-
-^!a::
+^!s::
 KeyWait s
 KeyWait Alt
 KeyWait Control
