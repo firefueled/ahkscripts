@@ -41,6 +41,6 @@ PixelChange(x,y,delay) {
 		if (chg <> ori) {
 			return chg
 		}
-	}	tel:%2B55%2071%209956%207272
+	}
 }
 return
